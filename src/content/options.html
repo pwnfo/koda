@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koda Scanner</title>
+  <link rel="stylesheet" href="styles/options.css" />
+</head>
+
+<body>
+  <main class="options-page">
+    <header class="page-header">
+      <h1>Koda Scanner - Options | <a href="https://github.com/pwnfo/koda">View on GitHub</a></h1>
+      <p>Configure encodings, search mode, and reflection targets.</p>
+    </header>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Encodings</h2>
+        <span>Select built-in encodings.</span>
+      </div>
+
+      <div class="subsection">
+        <h3>Built-in encodings</h3>
+        <div class="checkbox-grid">
+          <label class="check">
+            <input type="checkbox" id="encPlain" value="plain" />
+            <span>Plain</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" id="encUrl" value="url" />
+            <span>URL</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" id="encUrlDouble" value="urlDouble" />
+            <span>URL Double</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" id="encBase64" value="base64" />
+            <span>Base64</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" id="encBase32" value="base32" />
+            <span>Base32</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" id="encHex" value="hex" />
+            <span>Hex</span>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" id="encJson" value="json" />
+            <span>JSON</span>
+          </label>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Search behavior</h2>
+        <span>Control how matching is performed.</span>
+      </div>
+
+      <div class="subsection">
+        <h3>Partial search</h3>
+
+        <div class="segmented" role="radiogroup" aria-label="Partial search">
+          <label class="segment">
+            <input type="radio" name="partialSearch" value="true" id="partialSearchTrue" />
+            <span>True</span>
+          </label>
+
+          <label class="segment">
+            <input type="radio" name="partialSearch" value="false" id="partialSearchFalse" />
+            <span>False</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Reflection targets</h2>
+        <span>Choose where the extension should look for reflections.</span>
+      </div>
+
+      <div class="checkbox-grid targets-grid">
+        <label class="check">
+          <input type="checkbox" id="targetGet" value="get" />
+          <span>GET Params</span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" id="targetLocalStorage" value="localStorage" />
+          <span>localStorage</span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" id="targetSessionStorage" value="sessionStorage" />
+          <span>sessionStorage</span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" id="targetCookies" value="cookies" />
+          <span>Cookies</span>
+        </label>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <button type="button" id="saveButton">Save</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </footer>
+  </main>
+  <script src="scripts/options.js"></script>
+</body>
+
+</html>

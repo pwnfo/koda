@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Koda Scanner</h1>
+    <div id="topBar"></div>
+    <div id="btnContainer">
+      <button id="searchBtn">SEARCH</button>
+      <button id="optionsBtn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16"
+          viewBox="0,0,256,256">
+          <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <g transform="scale(10.66667,10.66667)">
+              <path
+                d="M21,12c0,-0.385 -0.025,-0.772 -0.075,-1.158l2.03,-1.868l-2.857,-4.949l-2.641,0.827c-0.617,-0.474 -1.285,-0.862 -1.997,-1.159l-0.602,-2.693h-5.716l-0.602,2.693c-0.712,0.297 -1.38,0.685 -1.997,1.16l-2.641,-0.828l-2.857,4.95l2.03,1.868c-0.05,0.385 -0.075,0.772 -0.075,1.157c0,0.385 0.025,0.772 0.075,1.158l-2.03,1.868l2.857,4.949l2.641,-0.827c0.617,0.475 1.285,0.862 1.997,1.159l0.602,2.693h5.717l0.602,-2.693c0.712,-0.297 1.38,-0.685 1.997,-1.159l2.641,0.827l2.857,-4.949l-2.03,-1.868c0.049,-0.386 0.074,-0.773 0.074,-1.158zM12,14.75c-1.519,0 -2.75,-1.231 -2.75,-2.75c0,-1.519 1.231,-2.75 2.75,-2.75c1.519,0 2.75,1.231 2.75,2.75c0,1.519 -1.231,2.75 -2.75,2.75z">
+              </path>
+            </g>
+          </g>
+        </svg></button>
+    </div>
+    <div id="status" style="margin-top: 10px; font-size: 0.8rem; color: #888;"></div>
+    <ul id="resultsList" class="results-list"></ul>
+  </div>
+  <script src="scripts/popup.js"></script>
+</body>
+</html>
