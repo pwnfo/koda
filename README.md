@@ -1,10 +1,16 @@
 # Koda Scanner
 
-![Koda Scanner Icon](img/icon.png)
+<p align="center">
+<br>
+<img width="300px" src="img/icon.png" alt="icon"/>
+<br>
+</p>
 
 **Koda Scanner** is a browser extension to instantly discover parameter reflections across web applications. It helps identify potential Cross-Site Scripting (XSS) and injection vulnerabilities by tracking where input parameters are rendered in the DOM.
 
-![Demo](img/demo.png)
+<p align="center">
+<img width="40%" height="40%" src="img/demo.png" alt="demo"/>
+</p>
 
 ## 🛠️ How to Install
 
